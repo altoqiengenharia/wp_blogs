@@ -6,13 +6,17 @@
 
 
 
-<section class="section_block section_block__download-hero">
+<section class="section_block section_block__download-hero background-image">
+  <?php header_image(); ?>
        <div class="row">
            <div class="small-12 columns">
-               <h1> Eberick V10 Next Release 1s</h1>
-               <h5>(Atualização 2016-04)</h5>
-               <p> Para executar a instalação é necessário manter o Eberick fechado. <br> <strong>Importante.</strong> Esta é uma atualização apenas para </p>
-               <a class="button btn-primary btn-large" href="#" role="button">Faça o download</a>
+             <img class="brand" src="<?php bloginfo('stylesheet_directory'); ?>/images/brand/brand-s-hero-light.png" alt="" />
+                <h1><strong>Eberick </strong> V10 Next </h1>
+                <h5>Release 1.1 2016/06</h5>
+               <a class="button btn-primary medium" href="#" role="button">
+                 <i class="material-icons">file_download</i> Faça o download
+                 <span class="toogle-buttom-download"><strong>Para executar a instalação</strong> </br> é necessário manter o Eberick fechado!</span>
+               </a>
             </div>
       </div>
  </section>
@@ -21,30 +25,33 @@
 
 
 
-
-
-
 <section class="section_block section_block__download-info">
   <div class="row">
-         <div class="medium-7 columns">
-            <img src="http://placehold.it/700x300" class="img-responsive">
+         <div class="large-6 columns">
+            <img src="http://placehold.it/600x300" class="img-responsive">
         </div>
-        <div class="medium-5 columns">
+        <div class="large-6 columns">
           <h3>Faça o Download</h3>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          <p> Caso você tenha optado por participar do Eberick V10 Next, você poderá fazer o download da instalação do programa, incluindo todos os novos recursos e melhorias.</p>
+          <p>  A atualização para as revisões mais recentes ocorrem de forma automática, sendo que ao abrir o Eberick é emitido um aviso sobre uma nova atualização disponível. Você também pode fazer o download da nova atualização através do link abaixo </p>
           <a class="button btn-primary btn-large" href="#" role="button">Faça o download »</a>
         </div>
   </div>
 </section>
 
 
-<section class="section_block section_block__download-join">
+
+
+<section class="section_block section_block__join">
   <div class="row">
          <div class="small-12 columns">
-           <p> <span>Lorem ipsum dolor sit amet</span>  <a class="button btn-primary" href="#cadastre-se" role="button">Cadastre-se</a></p>
+           <p> <span>Lorem ipsum dolor sit amet</span>  <a class="light button" href="<?php bloginfo( 'url' ); ?>/inscricao" role="button">Cadastre-se</a></p>
         </div>
   </div>
 </section>
+
+
+
 
 <?php endwhile; ?>
 

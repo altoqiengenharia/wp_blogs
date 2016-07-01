@@ -1,10 +1,32 @@
 <?php get_header(); ?>
 
+
+
+<section class="section_block section_block__home-hero background-image">
+        <div class="row">
+           <div class="small-12 columns">
+
+               <img class="brand" src="<?php bloginfo('stylesheet_directory'); ?>/images/brand/brand-s-hero-light.png" alt="" />
+                  <h1><strong>Eberick </strong> V10 Next </h1>
+                  <h5>Blog de desenvolvimento colaborativo</h5>
+            </div>
+      </div>
+ </section>
+
+
+
+
+
+
+
+
+
 <div class="container-fluid">
 
 
 <article class="posts">
  <div  class="row" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-item" }'>
+
 
 
 
@@ -15,20 +37,20 @@ if ( have_posts() ) {
    the_post();  ?>
 
 
-   <div class="grid-item col-xs-12  col-sm-6 col-md-4 col-lg-3">
-
-
-   <section class="post__card">
+   <div class="grid-item small-12  medium-6 large-4 columns">
+     <section class="post__card">
        <div class="post__card--inner">
              <div class="post__card-header">
-                 <?php if ( has_post_thumbnail() ) {	the_post_thumbnail();} ?>
+               <?php if ( has_post_thumbnail() ) {  ?>
+                 <a href=" <?php the_permalink() ?>"><?php the_post_thumbnail(); ?> </a>
+              <?php } ?>
+
              </div> <!-- //post__card-header -->
              <div class="post__card-body">
-                 <h2> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>  </h2>
-                 <span meta>Escrito por: <?php  the_author_posts_link() ?>  </span>
+                 <h2 class="post__card__title"> <a  class="post__card__title__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>  </h2>
+                 <span class="post__card__meta-author">Escrito por: <?php  the_author_posts_link() ?>  </span>
                   <?php  if (has_excerpt() ) { the_excerpt();  } ?>
-                  <a href="<?php the_permalink(); ?>" type="button" class="btn btn-primary">Acesse</a>
-             </div> <!-- //post__card-body -->
+              </div> <!-- //post__card-body -->
        </div>
    </section>
 </div> <!-- //grid-item -->

@@ -1,0 +1,154 @@
+@include breakpoint(small only) {
+  //small sem espaços
+  .single__hero{ margin-bottom: 0px !important;}
+  .grid-small{ padding: 0 !important}
+  .single__post{margin: 0px !important;}
+}
+
+
+/* SINGLE*/
+.single{
+
+  &__hero{
+    text-align: center; padding: 20px 0; background-color:#00223b; color:#fff ; margin-bottom: 20px;
+    &--video{
+      padding: 60px 0;
+      background-color: #444;
+     //@extend .sbackground-image;
+  }
+
+    h1 { font-weight: 300;   line-height: 3.4375rem; margin: 2rem 0 0rem 0; strong{font-weight: 800;} }
+    h5 {margin-top: 0; opacity: 0.5; margin-bottom: 20px; }
+    p {opacity: 0.7; }
+  }
+
+  &__post{
+    display: block;
+    background: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin: 0 auto 60px auto;
+    max-width: 800px;
+    border-radius: $global-radius;
+    &-video{
+      .flex-video{box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        .iframe{ }
+      }
+    }
+    &-header{ display: inline-block; width: 100%; text-align: center; background: #646d7c;     position: relative;}
+    &-body{
+      @include breakpoint(small) { padding: 40px 30px; }
+      @include breakpoint(medium) { padding: 60px 40px; }
+      @include breakpoint(large ) { padding: 80px 60px; }
+      &__title { font-weight: 800; line-height: 1.1;   @include breakpoint(small only) { font-size: 1.7rem; } }
+      &__excerpt{
+          p{
+            opacity: 0.7; margin-top: 0 !important;  margin-bottom: 10px !important;
+            @include breakpoint(small only) { line-height: 1.2 !important;  opacity: 0.5;  font-style: italic !important; margin-bottom:5px !important }
+          }
+      }
+      p  { text-align: left !important; margin-top: 29px; font-weight: 400; font-style: normal; font-size: 19px; line-height: 1.58; letter-spacing: -.003em;  margin-bottom: 0;}
+      &__meta-author{   color: rgba(0, 0, 0, 0.41);   font-style: italic;
+              a:hover{ text-decoration: underline !important; }
+          }
+      .wp-caption{ margin: 29px auto 0 auto !important; max-width: 100%; width: auto !important; text-align: center;
+          a{
+            img{ cursor: -webkit-zoom-in;  }
+            img.active{ cursor: -webkit-zoom-out;  }
+          }
+          p{
+            margin: 5px auto;
+            font-size: 14px;
+            text-align: center !important;
+            opacity: 0.6;
+            max-width: 500px;
+            line-height: 1;
+          }
+      }
+
+    }
+
+    &-comments{
+      @include breakpoint(small) { padding: 20px 30px 40px 30px; }
+      @include breakpoint(medium) { padding: 20px 40px 60px 40px; }
+      @include breakpoint(large ) { padding: 20px 60px 80px 60px; }
+
+            #comments{ font-size: 1.2rem; opacity: 0.6; margin-bottom: 20px;}
+
+            .commentlist{
+              /*Comment Output*/
+             list-style: none;  margin: 0;  width: 100%; display: inline-block;
+             li { line-height: auto;}
+             li p { line-height: auto;}
+             li ul { line-height: auto;}
+             li ul.children li { line-height: auto;}
+             li ul.children li.alt { line-height: auto;}
+             li ul.children li.byuser { line-height: auto;}
+             li ul.children li.comment { line-height: auto;}
+             li ul.children li.depth-id { line-height: auto;}
+             li ul.children li.bypostauthor { line-height: auto;}
+             li ul.children li.comment-author-admin { line-height: auto;}
+
+               >  .comment:hover .reply { opacity: 1;}
+              .reply { opacity: 0; transition: all 0.5s; }
+              .reply a { line-height: auto;}
+
+              .alt { line-height: auto;}
+              .odd { background: #FAFBFC;}
+              .even { line-height: auto;}
+              .thread-alt { line-height: auto;}
+              .thread-odd { line-height: auto;}
+              .thread-even { line-height: auto;}
+              li ul.children .alt { line-height: auto;}
+              li ul.children .odd { line-height: auto;}
+              li ul.children .even { line-height: auto;}
+
+              .vcard { width: 100%;     margin-left: 50px;    display: inline-block;    position: relative;}
+              .vcard cite.fn { margin-top: 8px;}
+              .vcard cite.fn::before { content: ""}
+              .vcard span.says { display:none}
+              .vcard img.photo { line-height: auto;}
+              .vcard img.avatar {     top: 12px;   border-radius: 100%; position: absolute;  left: -50px;}
+              .vcard cite.fn a.url { line-height: auto;}
+
+              .comment-meta { margin-left: 50px; margin-bottom: 10px; font-size: 14px; border-bottom: 1px solid rgba(105, 105, 105, 0.07); padding-bottom: 10px;}
+              .comment-meta a { line-height: auto;}
+              .commentmetadata { line-height: auto;}
+              .commentmetadata a { line-height: auto;}
+
+              .parent { line-height: auto;}
+              .comment { border: 1px solid #F2F2F2; padding: 20px; margin-bottom: 20px;}
+              .children { list-style: none; margin-top: 20px;}
+              .pingback { line-height: auto;}
+              .bypostauthor { line-height: auto;}
+              .comment-header{ font-size: 16px;}
+              .comment-author { margin-bottom: 0;}
+              .comment-author-admin { background-color: #fff;}
+              .comment-author-145830{ background-color: #fff;}
+            }
+
+            #cancel-comment-reply { line-height: auto;}
+            #cancel-comment-reply a { line-height: auto;}
+
+
+
+            .comment-form{}
+            .comment-form .logged-in-as{ font-size: 14px; line-height: 1; opacity: 0.7;
+              a{}
+            }
+            .comment-form .comment-form-comment{}
+            .comment-form .form-submit{}
+            .comment-form .form-submit .submit{ @extend .button;}
+
+            .comment-respond{ line-height: auto;}
+            .comment-respond .comment-reply-title{ font-size: 1.5rem;     margin: 0;}
+            .comment-respond .comment-reply-title small{ font-size: 60%;}
+
+            .navigation{ line-height: auto;}
+            .nocomments{ background-color: #ff0000;}
+
+    }
+
+  }
+}

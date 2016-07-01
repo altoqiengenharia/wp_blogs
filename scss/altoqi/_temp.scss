@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,700italic,900,900italic,100italic,100,400italic);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+html {margin-top: 0 !important;}
+main { display: inline-block; width: 100%; float: left; min-height: calc(80vh); }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #666; font-weight: 500 ;}
+
+.background-image { background-image: url(images/background/header.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;}
+.section_dark{ background: #232526; background-image: linear-gradient(#232526 , #414345); background-image: -webkit-linear-gradient(#232526 , #414345); background-size: auto 200%; background-position: 0 100%; transition: background-position 0.5s; color: #fff !important; }
+.section-light { text-align: center; background: #ece9e6; background-image: linear-gradient(#ece9e6, #fff); background-image: -webkit-linear-gradient(#ece9e6 , #fff); background-size: auto 200%; background-position: 0 100%; transition: background-position 0.5s; color: #2a2a2a;}
+
+.off-canvas-wrapper{ background-color: $light-gray;}
+
+
+
+
+/* GENERICOS
+======================================================== */
+/*JOIN*/
+.section_block__join { padding: 20px 0;  text-align: center;
+    background: #232526;
+    background-image: linear-gradient(#232526, #414345);
+    background-image: -webkit-linear-gradient(#232526, #414345);
+    p {font-size: 22px; color: #fff; margin: 0;
+      a {margin: 0 0px 0px 10px;}
+    }
+}
+
+
+
+
+/* EDIT BUTTON
+======================================================== */
+.editbtn{  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37); position: fixed;  bottom: 10px;  right: 15px;  background: #2196F3;  padding: 10px;  border-radius: 50%;  width: 50px;  text-align: center;  height: 50px;  transition: all 250ms;
+    &:hover{  -webkit-transform: translateY(-5px); -moz-transform: translateY(-5px); transform: translateY(-5px);   box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+         .post-edit-link--text {    visibility: visible;    transition: all 250ms; }
+    }
+    .material-icons{}
+    .post-edit-link {  color: #fff;
+        &:hover,
+        &:focus {  color: #fff; }
+        &--text { position: absolute; background: #000; width: 86px; right: 60px; display: inline-block; bottom: 13px; padding: 2px; color: #fff; font-weight: 600; visibility: hidden; font-size: 12px;  transition: all 250ms; -webkit-transform: translateX(0px); -moz-transform: translateX(0px); transform: translateX(0px); border-radius: 4px;
+              &::after {content: ""; position: absolute; border-top: 5px solid rgba(0, 0, 0, 0); border-bottom: 5px solid rgba(0, 0, 0, 0); border-left: 5px solid#080808; right: -5px; top: 6px; }
+            }
+    }
+}
+/* END EDIT BUTTON
+======================================================== */
+
+
+
+
+/*INFO*/
+.section_block__download-info,
+.section_block__inscricao-info {     padding: 120px 0;    background: #fff; }

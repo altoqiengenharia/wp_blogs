@@ -1,0 +1,21 @@
+.section_block__indice{
+  &__hero{ text-align: center; padding: 40px 0; background-color:#00223b; color:#fff ;
+      h1 { font-weight: 300;   line-height: 3.4375rem; margin: 2rem 0 0rem 0;
+        strong{font-weight: 800;}
+      }
+      h5 {  margin-top: 0; opacity: 0.5; margin-bottom: 20px; }
+  }
+  &__accordion{
+    &__item{
+      &__title{ font-size: 1.5rem;}
+      &__content{
+              &__list-posts{ list-style-type: square;
+                li{
+                    a{width: 100%; font-size: 18px; display: block;}
+                 }
+              }
+
+      }
+    }
+  }
+}
