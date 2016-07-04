@@ -1,13 +1,15 @@
 <?php get_header(); ?>
 
 
+<?php   $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
 
-<section class="section_block section_block__home-hero background-image">
+
+<section class="section_block section_block__author-hero background-image">
         <div class="row">
            <div class="small-12 columns">
-                  <img class="brand" src="<?php bloginfo('stylesheet_directory'); ?>/images/brand/brand-s-hero-light.png" alt="" />
-                  <h1><strong>Eberick </strong> V10 Next </h1>
-                  <h5>Blog de desenvolvimento colaborativo</h5>
+                <img class="brand" src="<?php bloginfo('stylesheet_directory'); ?>/images/brand/brand-s-hero-light.png" alt="" />
+                <h1><strong> <?php echo $curauth->display_name; ?></strong>  </h1>
+                <h5>Autor do Blog de desenvolvimento colaborativo</h5>
             </div>
       </div>
  </section>
@@ -26,10 +28,6 @@
 <article class="posts">
  <div  class="row" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-item" }'>
 
-
-
-
-
 <?php
 if ( have_posts() ) {
  while ( have_posts() ) {
@@ -47,9 +45,7 @@ if ( have_posts() ) {
              </div> <!-- //post__card-header -->
              <div class="post__card-body">
                  <h2 class="post__card__title"> <a  class="post__card__title__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>  </h2>
-                 <span class="post__card__meta-author">Escrito <?php the_time('d/m/Y');?>  por: <?php  the_author_posts_link() ?>  </span>
- 
-                  <?php  if (has_excerpt() ) { the_excerpt();  } ?>
+                   <?php  if (has_excerpt() ) { the_excerpt();  } ?>
               </div> <!-- //post__card-body -->
        </div>
    </section>

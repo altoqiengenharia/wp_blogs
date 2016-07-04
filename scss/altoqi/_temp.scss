@@ -12,7 +12,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 .off-canvas-wrapper{ background-color: $light-gray;}
 
-
+article.posts {
+    padding: 60px 0;
+}
 
 
 /* GENERICOS
@@ -32,7 +34,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 
 /* EDIT BUTTON
 ======================================================== */
-.editbtn{  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37); position: fixed;  bottom: 10px;  right: 15px;  background: #2196F3;  padding: 10px;  border-radius: 50%;  width: 50px;  text-align: center;  height: 50px;  transition: all 250ms;
+.editbtn{ z-index: 1; box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37); position: fixed;  bottom: 10px;  right: 15px;  background: #2196F3;  padding: 10px;  border-radius: 50%;  width: 50px;  text-align: center;  height: 50px;  transition: all 250ms;
     &:hover{  -webkit-transform: translateY(-5px); -moz-transform: translateY(-5px); transform: translateY(-5px);   box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
          .post-edit-link--text {    visibility: visible;    transition: all 250ms; }
     }

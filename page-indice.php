@@ -9,8 +9,9 @@
 <section class="section_block section_block__indice__hero background-image">
         <div class="row">
            <div class="small-12 columns">
-                 <h1><strong>Índice </strong> de publicações </h1>
-               <h5>Eberick V10</h5>
+              <img class="brand" src="<?php bloginfo('stylesheet_directory'); ?>/images/brand/brand-s-hero-light.png" alt="" />
+               <h1><strong>Índice </strong> de publicações </h1>
+             <h5>Eberick V10</h5>
             </div>
       </div>
  </section>

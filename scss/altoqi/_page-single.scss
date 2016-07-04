@@ -6,20 +6,43 @@
 }
 
 
+.gallery {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+
+  .gallery-item{  margin: 0;
+    img{ max-width: 100% !important; width: initial !important;     margin: 0 auto;}
+    .gallery-caption{text-align: center}
+
+  }
+   figure.owl-item{ margin:0}
+}
+
+
+
 /* SINGLE*/
 .single{
 
   &__hero{
     text-align: center; padding: 20px 0; background-color:#00223b; color:#fff ; margin-bottom: 20px;
-    &--video{
-      padding: 60px 0;
-      background-color: #444;
-     //@extend .sbackground-image;
-  }
-
     h1 { font-weight: 300;   line-height: 3.4375rem; margin: 2rem 0 0rem 0; strong{font-weight: 800;} }
     h5 {margin-top: 0; opacity: 0.5; margin-bottom: 20px; }
     p {opacity: 0.7; }
+    .brand{ width: 260px; max-width: 100%; }
+    &--video{
+          padding: 60px 0;
+          background-color: #444;
+         //@extend .sbackground-image;
+      }
+    &--post{
+            padding: 60px 0;
+            background-color: #444;
+            @extend .background-image;
+      }
+
+
   }
 
   &__post{
@@ -49,9 +72,12 @@
           }
       }
       p  { text-align: left !important; margin-top: 29px; font-weight: 400; font-style: normal; font-size: 19px; line-height: 1.58; letter-spacing: -.003em;  margin-bottom: 0;}
+      ul{ margin-top: 20px;
+        li{ font-size: 19px;}
+      }
       &__meta-author{   color: rgba(0, 0, 0, 0.41);   font-style: italic;
               a:hover{ text-decoration: underline !important; }
-          }
+      }
       .wp-caption{ margin: 29px auto 0 auto !important; max-width: 100%; width: auto !important; text-align: center;
           a{
             img{ cursor: -webkit-zoom-in;  }
@@ -66,6 +92,9 @@
             line-height: 1;
           }
       }
+
+
+
 
     }
 
@@ -148,6 +177,20 @@
             .navigation{ line-height: auto;}
             .nocomments{ background-color: #ff0000;}
 
+    }
+
+    &__meta-author{ border: 1px solid #eee; background-color: #f8f8f8; padding: 20px 20px 20px 60px; position: relative; margin-top: 40px;
+        &__info{ line-height: auto;
+          &-heading{ padding: 0; margin: 0; font-size: 14px;}
+          &-inner{  display: inline-block; width: 100%;}
+          &-avatar{    position: absolute;    left: -40px;
+            a{ width: 100%; display: inline-block;}
+            img{border-radius: 100%;}
+          }
+          &-description{ line-height: auto;
+            p{ margin: 0; font-size: 17px;}
+          }
+        }
     }
 
   }

@@ -70,12 +70,3 @@ function remove_width_attribute( $html ) {
    $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
    return $html;
 }
-
-
-
-
-
-// COMMENTS ///////////////////////////////////////////////////////
- 
-
-// END COMMENTS ///////////////////////////////////////////////////////

@@ -15,7 +15,9 @@
                                      }
                               }
                           &__list-checkbox { padding: 0px 30px;}
-                          &__title{ background-color: #fff; margin: 0 !important; font-weight: 400; position: relative; color: #6EAA77; font-size: 17px; width: 100%; display: inline-block; border-top: 1px solid #ddd; padding: 5px 20px;}
+                          &__title{ background-color: #fff; margin: 0 !important; font-weight: 400; position: relative; color: #6EAA77; font-size: 17px; width: 100%; display: inline-block; border-top: 1px solid #ddd; padding: 5px 20px;
+                            .material-icons{vertical-align: middle;}
+                          }
                           &__list { list-style: none; margin: 0; display:none; padding: 0 0 20px 30px;
                                 &-item{ line-height:auto;
                                         &-link{ font-size: 14px; color: rgba(0,0,0,0.7);	 &:hover{ text-decoration:underline;}  }

@@ -158,9 +158,10 @@
        <script src="<?php bloginfo('stylesheet_directory'); ?>/bower_components/foundation-sites/dist/foundation.js"></script>
        <script src="<?php bloginfo('stylesheet_directory'); ?>/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
 
-       <?php if (is_single() || is_page() ) { ?>
-         <script src="<?php bloginfo('stylesheet_directory'); ?>/temp/zoom.js"></script>
-        <?php  } ?>
+      <?php if (is_single() || is_page() ) { ?>
+          <script src="<?php bloginfo('stylesheet_directory'); ?>/temp/zoom.js"></script>
+          <script src="<?php bloginfo('stylesheet_directory'); ?>/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+      <?php  } ?>
 
 
        <script src="<?php bloginfo('stylesheet_directory'); ?>/js/app.js"></script>

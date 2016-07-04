@@ -10,6 +10,13 @@
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <?php if (  is_singular() && get_option('thread_comments')  ) wp_enqueue_script( 'comment-reply' ); ?>
 
+
+        <?php if (is_single() || is_page() ) { ?>
+            <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+            <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
+         <?php  } ?>
+
+
          <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
 
          <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon/favicon.ico" type="image/x-icon">
